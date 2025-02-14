@@ -1,0 +1,102 @@
+:root {
+    --primary-pink: #FF69B4;
+    --secondary-pink: #FFB6C1;
+    --dark-pink: #FF1493;
+}
+
+body {
+    background-color: #FFF0F5;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content-wrapper {
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-title {
+    font-family: 'Dancing Script', cursive;
+    color: var(--dark-pink);
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.canvas-container {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flower-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.draw-button {
+    background-color: var(--primary-pink);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.draw-button:hover {
+    background-color: var(--dark-pink);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.draw-button:active {
+    transform: translateY(0);
+}
+
+.text-pink {
+    color: var(--primary-pink) !important;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+.button-loader {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+}
+
+.alert {
+    max-width: 400px;
+    margin: 1rem auto;
+}
+
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .canvas-container {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .draw-button {
+        padding: 0.8rem 1.6rem;
+        font-size: 1rem;
+    }
+}
